@@ -2,11 +2,38 @@
 <html>
 <head>
 <title>NguyenTanPhat-CTU-CV</title>
+<style>
+</style>
 </head>
 <body>
-<h1> <a href="https://raw.githubusercontent.com/NguyenTanPhat-Tony/NguyenTanPhat-Tony.github.io/main/NguyenTanPhat-CTU-CV-2023.jpg"> NguyenTanPhat-CV.jpg </a></h1>
-<h1> <a href= "https://github.com/NguyenTanPhat-Tony/NguyenTanPhat-Tony.github.io/blob/main/CV-NguyenTanPhat.pdf"> NguyenTanPhat-CV.pdf </a></h1>
+
+
+<h1 align= "center">Hi, I am Nguyễn Tấn Phát</h1>
+
+<h3 align= "center" onclick="copyElementText('tel'); javascript:alert('Copied');"> Tel.
+	<a id="tel" style="color:blue">0984.884.304</a>
+</h3>
+
+<h3 align= "center" onclick="copyElementText('mail'); javascript:alert('Copied');"> E-mail: 
+	<a id="mail" href="mailto:NguyenTanPhat.jobs@gmail.com;">NguyenTanPhat.jobs@gmail.com</a>
+</h3>
+
+<h3 align= "center" > 
+	<a href= "https://drive.google.com/file/d/1wq4573TXMja0_RSgM1Vkq5yz3qVhZG8p/view?usp=sharing">Download My CV</a>
+</h3>
+
 <img align="center" src="https://raw.githubusercontent.com/NguyenTanPhat-Tony/NguyenTanPhat-Tony.github.io/main/NguyenTanPhat-CTU-CV-2023.jpg" alt="NguyenTanPhat-CV" style = "width:1440px; height:2038px;">
 
+<script>
+function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
+</script>
 </body>
 </html>
